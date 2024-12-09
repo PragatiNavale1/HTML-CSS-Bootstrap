@@ -1,0 +1,413 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: black;
+}
+
+
+/** Sidebar **/
+
+.container {
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+i {
+    color: rgb(60, 107, 60);
+}
+
+.sidebar {
+    width: 200px;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    position: fixed;
+    overflow-x: hidden;
+}
+
+.sidebar img {
+    margin-left: 10px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 170px;
+    border-radius: 50%;
+    border: grey solid 1px;
+}
+
+.sidebar ul {
+    list-style: none;
+    border-top: 0.5px solid rgb(79, 233, 197);
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 16px;
+}
+
+.sidebar li a {
+    color: black;
+    font-weight: 100;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.sidebar a:hover:not(.active) {
+    font-weight: 600;
+    color: black;
+}
+
+/** Main Screen**/
+
+.main {
+    flex: 1;
+    padding: 100px;
+    height: 400px;
+    margin-left: 240px;
+    background-color: #4c8f89;
+}
+
+.home {
+    margin-bottom: 20px;
+}
+
+.home P {
+    font-size: large;
+    font-family: sans-serif;
+    line-height: 1.8rem;
+}
+
+h1 {
+    text-align: start;
+    font-size: 2em;
+    font-weight: 100;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+
+.about h4 {
+    font-size: large;
+    font-family: sans-serif;
+}
+
+.buttons {
+    padding: 20px;
+}
+button a{
+    text-decoration: none;
+    color: #53ac85;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0 10px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.buttons button:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.social-links {
+    display: flex;
+    padding: 20px;
+    
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: rgb(6, 6, 6);
+    width: 50px;
+    font-size: 2rem;
+}
+
+.icons {
+    color: black;
+}
+
+
+/** ABOUT SECTION **/
+
+.about {
+    display: block;
+    height: 570px;
+    color: black;
+    margin-left: 240px;
+    background-color: #f2f2f2;
+}
+
+.head P {
+    margin-top: 0px;
+    background-color: #178254;
+    height: 50px;
+    color: white;
+    padding: 10px;
+    padding-left: 40px;
+    font-weight: 800;
+    font-size: 30px;
+    
+}
+
+.content {
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 500px;
+    line-height: 1.8rem;
+}
+
+
+/**     Experiance Section     **/
+
+.experience {
+    display: block;
+    height: 1060px;
+    color: black;
+    margin-left: 240px;
+    background-color: #f2f2f2;
+}
+
+.box{
+    height: 400px;
+    width: 75%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 30px;
+    margin-left: 150px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 30px #d9d9d9, 20px 20px 30px;
+}
+
+.card-nav {
+    height: 60px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 5px;
+    border-bottom: grey solid 1px;
+}
+
+.logo{
+    background-image: url("Images/certificet.PNG");
+    background-size: cover;
+    transform: scale(0.5);
+    height: 110px;
+    width: 100px;
+}
+
+
+/**     PROJECT SECTION     **/
+
+.project {
+    display: block;
+    height: 520px;
+    color: black;
+    margin-left: 240px;
+    background-color: #f2f2f2;
+}
+
+.pro-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.pro-box {
+    height: 380px;
+    width: 28%;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.pro-box:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.discr {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+.box-img{
+    position: relative;
+    height: 200px;
+    background-size: cover;
+    background-repeat: contain;
+    margin-bottom: 1rem;
+}
+
+.box-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+.proj-name {
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.proj-name p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 80%;
+    color: #178254;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.proj-name a {
+    color: rgb(6, 6, 6);
+    width: 50px;
+    font-size: 1.5rem;
+}
+
+
+/**     SKILLS SECTION      **/ 
+
+.skills {
+    margin-left: 240px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+
+.section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    color: black;
+    font-size: 2em;
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skill-div {
+    width: 120px;
+    height: 100px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-div:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.skill-div img {
+    width: 100px;
+    height: 1500px;
+    margin-bottom: 5px;
+    background-size: cover;
+    transform: scale(0.8);
+}
+
+.skill-div p {
+    color: black;
+}
+
+
+/**     Education Section   **/
+
+.education {
+    display: block;
+    height: 980px;
+    color: black;
+    margin-left: 240px;
+    margin-top: 0px;
+    background-color: #f2f2f2; 
+}
+
+.body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.body h3 {
+    margin-top: 20px;
+    margin-left: 40px;
+    color: rgb(54, 114, 93);
+}
+
+.pro-box1 {
+    height: 400px;
+    width: 40%;
+    background-color: white;
+    margin-left: 40px;
+    margin-bottom: 30px;
+
+}
+.content1 {
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 500px;
+    line-height: 1.8rem;
+}
+
+/**     Contact Section**/
+
+.contact {
+    display: block;
+    height: 600px;
+    color: #554444;
+    margin-left: 240px;
+    margin-top: 0px;
+    background-color: #f2f2f2; 
+}
+
+.contact-info {
+    margin: 100px;
+}
+
+
+.contact-align {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-align a {
+    margin: 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.contact-align a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
