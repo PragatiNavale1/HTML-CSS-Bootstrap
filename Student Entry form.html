@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical Exam</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .logo {
+            width: 100px;
+        }
+        h1 {
+            padding-top: 0;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="row py-3">
+            <div class="col-md-2 text-center logo">
+                <img src="Images/Clg_logo.png" alt="College Logo" class="img-fluid">
+            </div>
+            <div class="col-md-8 text-center align-self-center">
+                <h1 class="fw-bold">Sanjivani College of Engineering, Kopargaon</h1>
+            </div>
+        </header>
+
+       
+        <main class="row justify-content-center">
+            <div class="col-md-6 bg-light p-4 rounded">
+                <form class="form">
+                    <h3 class="text-center">Student Information</h3>
+
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter Full Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cast" class="form-label">Religion / Cast</label>
+                        <input type="text" id="cast" class="form-control" placeholder="Enter Religion/Cast">
+                    </div>
+                    <div class="mb-3">
+                        <label for="nat" class="form-label">Nationality</label>
+                        <input type="text" id="nat" class="form-control" placeholder="Enter Nationality">
+                    </div>
+                    <div class="mb-3">
+                        <label for="pob" class="form-label">Place of Birth</label>
+                        <input type="text" id="pob" class="form-control" placeholder="Enter Place of Birth">
+                    </div>
+                
+                    <div class="mb-3">
+                        <label for="bday" class="form-label">Date of Birth:</label>
+                        <input type="datetime-local" id="bday" name="bdaytime" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="pro" class="form-label">Progress</label>
+                        <input type="text" id="pro" class="form-control" placeholder="Enter Progress">
+                    </div>
+                    <div class="mb-3">
+                        <label for="pro" class="form-label">Progress</label>
+                        <input type="text" id="pro" class="form-control" placeholder="Enter Progress">
+                    </div>
+                    <div class="mb-3">
+                        <label for="dol" class="form-label">Date of Leaving</label>
+                        <input type="text" id="dol" class="form-control" placeholder="Enter Date of Leaving">
+                    </div>
+                    <div class="mb-3">
+                        <label for="year" class="form-label">Course & Year of Studying</label>
+                        <input type="text" id="year" class="form-control" placeholder="Enter Course & Year of Studying">
+                    </div>
+                    <div class="mb-3">
+                        <label for="year" class="form-label">Reason for Leaving</label>
+                        <input type="text" id="year" class="form-control" placeholder="Enter Reason for Leaving">
+                    </div>
+                    <div class="mb-3">
+                        <label for="year" class="form-label">Remark</label>
+                        <input type="text" id="year" class="form-control" placeholder="Enter Remark">
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="submit" id="btn" name="submit" class="btn btn-primary form-control" onclick="validateF()">
+                        
+                    </div>
+                        
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+  <script>
+
+    function validateF(){
+        let name = document.getElementById('name').value.trim();
+            let cast = document.getElementById('cast').value.trim();
+            let nat = document.getElementById('nat').value.trim();
+            let pob = document.getElementById('pob').value.trim();
+            let bday = document.getElementById('bday').value;
+            let pro = document.getElementById('pro').value.trim();
+            let dol = document.getElementById('dol').value.trim();
+            let year = document.getElementById('year').value.trim();
+            let reason = document.getElementById('reason').value.trim();
+            let remark = document.getElementById('remark').value.trim();
+
+            if (name || cast || nat || pob || bday || pro || dol || year || reason || remark ===" ") {
+                alert('All fields are required.');
+            } else {
+                alert('Form Submitted Successfully!');
+              
+            }
+    }
+     
+    </script>
+
+
+</body>
+</html>
