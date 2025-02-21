@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+     <!-- Navbar -->
+  <nav>
+    <div class="logo">E-Shop</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html">Products</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="index.html">Contact</a></li>
+    </ul>
+  </nav>
+
+    <!-- Cart Page -->
+    <div class="cart-container">
+        <h2>Shopping Cart</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="product1.jpg" alt="Product 1"></td>
+                    <td>Product 1</td>
+                    <td>$20.00</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>$20.00</td>
+                    <td><button class="remove-btn">X</button></td>
+                </tr>
+                <tr>
+                    <td><img src="product2.jpg" alt="Product 2"></td>
+                    <td>Product 2</td>
+                    <td>$15.00</td>
+                    <td><input type="number" value="2" min="1"></td>
+                    <td>$30.00</td>
+                    <td><button class="remove-btn">X</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="cart-summary">
+            <h3>Total: $50.00</h3>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 E-Shop. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

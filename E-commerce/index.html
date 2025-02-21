@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple E-Commerce</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">E-Shop</div>
+    <ul class="nav-links">
+      <button id="theme-toggle">🌙 Dark Mode</button>
+
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section (Image 1) -->
+  <header class="hero" id="home">
+    <section>
+        <h1>Welcome to E-Shop</h1>
+        <p>Discover the best products at unbeatable prices.</p>
+        <a href="#" class="btn">Shop Now</a>
+    </section>
+    <section>
+        <img src="hero.jpeg" alt="Product 1" />
+    </section>
+    
+  </header>
+
+  <!-- Featured Products Section (Images 2, 3, & 4) -->
+  <section class="featured-products" id="products">
+    <h2>Featured Products</h2>
+    <div class="product-container">
+      <div class="product">
+        <img src="product1.jpeg" alt="Product 1" />
+        <h3>Smartphone X</h3>
+        <p>$499.99</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Product2.jpeg" alt="Product 2" />
+        <h3>Wireless Headphones</h3>
+        <p>$129.99</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Product3.jpeg" alt="Product 3" />
+        <h3>Smart Watch</h3>
+        <p>$199.99</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Shop With Us -->
+  <section class="why-us" id="WhyShop">
+    <h2>Why Shop With Us</h2>
+    <div class="why-container">
+        <div class="why-item">
+            <img src="quality.png" alt="Quality Products" />
+            <h3>Quality Products</h3>
+            <p>We offer only top quality and reliable products.</p>
+        </div>
+        <div class="why-item">
+            <img src="shipping.png" alt="Fast Shipping" />
+            <h3>Fast Shipping</h3>
+            <p>Quick delivery to your doorstep, every time.</p>
+        </div>
+        <div class="why-item">
+            <img src="support.png" alt="Excellent Support" />
+            <h3>Excellent Support</h3>
+            <p>Our dedicated team is here to help 24/7.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Customer Feedback -->
+<section class="customer-feedback" id="customer-feedback">
+    <h2>Customer Feedback</h2>
+    <div class="feedback-container">
+        <div class="feedback">
+            <img src="customer1.jpg" alt="Customer 1" />
+            <p>"Great service and quality products. I'm a happy customer!"</p>
+            <h4>John Doe</h4>
+        </div>
+        <div class="feedback">
+            <img src="customer2.jpg" alt="Customer 2" />
+            <p>"Fast shipping and excellent support. Highly recommended!"</p>
+            <h4>Jane Smith</h4>
+        </div>
+        <div class="feedback">
+            <img src="customer3.jpg" alt="Customer 3" />
+            <p>"Amazing experience and top-notch service."</p>
+            <h4>Sam Wilson</h4>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Us -->
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 E-Shop. All rights reserved.</p>
+  </footer>
+
+
+
+
+<script>
+    const toggleButton = document.getElementById("theme-toggle");
+const body = document.body;
+
+// Check for saved theme preference
+if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark-mode");
+    toggleButton.textContent = "☀️ Light Mode";
+}
+
+toggleButton.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+
+    // Save preference
+    if (body.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark");
+        toggleButton.textContent = "☀️ Light Mode";
+    } else {
+        localStorage.setItem("theme", "light");
+        toggleButton.textContent = "🌙 Dark Mode";
+    }
+});
+
+
+
+</script>
+</body>
+</html>
